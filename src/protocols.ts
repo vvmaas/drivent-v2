@@ -22,6 +22,14 @@ export type AddressEnrollment = {
 
 }
 
+export type CardData = {
+  issuer: string,
+  number: number,
+  name: string,
+  expirationDate: Date,
+  cvv: number
+}
+
 export type RequestError = {
   status: number,
   data: object | null,
